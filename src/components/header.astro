@@ -1,32 +1,33 @@
 ---
 import { Icon } from "astro-icon";
-import ThemeSwitcher from "~/components/theme-switcher.astro";
 import type { NavItem } from "~/types";
 
 const navItems: Array<NavItem> = [
-  { title: "Features", url: "#features" },
-  { title: "Compatibility", url: "#compatibility" },
-  { title: "Showcase", url: "#showcase" },
+  { title: "Servicios", url: "#services" },
+  { title: "Experiencia", url: "#experience" },
+  { title: "Testimonios", url: "#testimonio" },
+  { title: "Agenda", url: "#schedule" },
+  { title: "Contacto", url: "#contact" },
 ];
 ---
 
 <header
   id="page-header"
-  class="absolute bottom-0 z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-white"
+  class="absolute top-0 z-20 flex w-full items-center drop-shadow justify-between bg-jelly-bean-blue text-opal px-8 py-4"
 >
-  <a class="flex items-center gap-3 hover:!text-default" href="#">
-    <h1 class="sr-only">Astro</h1>
+  <a class="flex items-center hover:!text-default" href="#">
+    <h1 class="sr-only">JM Consulting Spa</h1>
     <Icon name="logomark" class="h-10" />
-    <Icon name="wordmark" class="hidden h-4 sm:block" />
+    <Icon name="wordmark" class="hidden ml-2 h-10 sm:block" />
   </a>
   <div>
     <div class="flex items-center gap-6">
       <nav class="hidden sm:block">
-        <ul class="flex items-center gap-6">
+        <ul class="flex items-center gap-x-6">
           {
             navItems.map(({ title, url }) => (
               <li>
-                <a class="text-sm" href={url}>
+                <a class="text-navbar" href={url}>
                   {title}
                 </a>
               </li>
@@ -42,11 +43,10 @@ const navItems: Array<NavItem> = [
       >
         <Icon pack="mdi" name="menu" class="h-8" />
       </button>
-      <ThemeSwitcher />
     </div>
     <div id="menu-modal" class="modal hidden" aria-hidden="true">
-      <div class="fixed inset-0 bg-default px-8 py-4 text-default">
-        <div class="space-y-4" role="dialog" aria-modal="true">
+      <div class="fixed inset-0 bg-jelly-bean-blue px-8 py-4 text-default">
+        <div class="space-y-12" role="dialog" aria-modal="true">
           <header class="text-right">
             <button
               id="close-nav-button"
