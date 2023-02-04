@@ -1,0 +1,18 @@
+---
+import TestimonialCard from "./testimonial-card.astro";
+---
+
+<section id="testimonials" class="container mx-auto h-3/6">
+  <div class="grid md:grid-cols-2 grid-cols-1 justify-items-center pt-5 md:p-0">
+    <div class="md:col-start-2">
+      <h2 class="text-granite-grey text-5xl">Testimonios</h2>      
+      <h3>Subtitulo</h3>
+    </div>
+  </div>
+
+  <div class="flex flex-wrap p-10 justify-around">   
+    <!--Card 1-->
+    <TestimonialCard company="Company 1" legal_representative="persona 1" description="lorem1"/>    
+    <TestimonialCard company="Company 2" legal_representative="persona 2" description="lorem2"/>    
+  </div>
+</section>

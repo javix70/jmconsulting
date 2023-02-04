@@ -3,7 +3,11 @@ import "@fontsource/inter/variable.css";
 import Footer from "~/components/footer.astro";
 import Header from "~/components/header.astro";
 import Cover from "~/components/cover.astro";
-import "~/styles/index.css";
+import "~/styles/index.scss";
+import Services from "~/components/services.astro";
+import Experience from "~/components/experience.astro";
+import Testimonials from "~/components/testimonials.astro";
+import Schedule from "~/components/schedule.astro";
 
 const { generator, site } = Astro;
 const image = new URL("social.jpg", site);
@@ -31,16 +35,21 @@ const description =
     <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body
-    class="h-full overflow-x-hidden bg-default text-default text-base"
+    class="h-full overflow-x-hidden bg-almond"
   >
     <Header />
-      <Cover />
-      <!-- 
-      <Services />
-      <Experience />
-      <Testimonials />
-      <Schedule />
-      <Contact /> -->
+    <Cover />
+    <Services />
+    <Experience />
+    <!-- <Testimonials /> -->
+    <Schedule />    
     <Footer />
+
+    
+    <a href="https://api.whatsapp.com/send?phone=+56985898082&text=Hola, quiero más información sobre tus servicios de contabilidad." class="float" target="_blank">
+      <i class="fa fa-whatsapp my-float"></i>
+    </a>
   </body>
-</html>
+  </html>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">

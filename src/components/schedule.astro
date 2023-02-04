@@ -1,0 +1,21 @@
+---
+---
+
+<section id="schedule" class="h-screen container mx-auto">
+  <div class="flex flex-col items-center p-5">
+    <h2 class="text-5xl">Agendamos una reunión?</h2>
+    <br>
+    <h3 class="text-2xl">Selecciona un día y una hora y nos reunimos para solucionar tus dudas</h3>
+  </div>
+  <div id="calendly" class="calendly-inline-widget h-[46rem]" data-url="https://calendly.com/jennymorenog/reunion-primera" style="min-width:320px"></div>
+</section>
+
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+<script>
+  let schedule = document.getElementById('calendly')!;
+  let iframe = schedule.querySelector('iframe')?.contentWindow?.document;
+  // .lmtWIHO_gkbTeeyuvoJC
+  console.log(iframe);
+</script>
+

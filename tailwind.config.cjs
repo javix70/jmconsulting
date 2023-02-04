@@ -28,9 +28,6 @@ module.exports = {
       backgroundColor: {
         default: "var(--color-almond)"
       },
-      backgroundImage: {
-        'cover-wave': "url('./src/icons/cover_wave.svg')",
-      },
       borderColor: {
         default: "var(--color-border)"
       },

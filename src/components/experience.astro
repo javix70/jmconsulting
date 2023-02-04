@@ -1,0 +1,23 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+---
+
+<ContentSection title="experience" id="experience" height="h-5/6" bg="square" extra_class="px-5">
+  <Fragment slot="right">
+    <div class="col-span-2 sm:block md:flex md:flex-col items-center justify-center hidden">
+      <Icon name="experiences_mono" size="70%"/>
+    </div>
+  </Fragment>
+
+  <Fragment slot="left">
+    <div class="col-span-2 flex flex-col pt-12">
+      <h2 class="text-3xl font-bold text-default">Experiencia</h2>
+      <p class="text-default pt-5 text-base">
+        Los contadores auditores Jenny Moreno y Eduardo Calderón son expertos en contabilidad, finanzas y tramites ante el SII. Con más de 4 años de experiencia combinada, ofrecen un servicio de alta calidad y eficiente a sus clientes. Su amplio conocimiento en el área de contabilidad les permite ofrecer soluciones personalizadas y adaptadas a las necesidades de cada empresa. Además, su compromiso con la excelencia y su enfoque en el servicio al cliente les permiten garantizar resultados satisfactorios y una experiencia única en el trámite de sus declaraciones y pagos ante el SII. ¡Confíe en los profesionales y obtenga resultados sobresalientes en su gestión contable y financiera!
+      </p>  
+    </div>
+  </Fragment>
+</ContentSection>
+
+

@@ -3,8 +3,21 @@ import { Icon } from "astro-icon";
 import ContentSection from "~/components/content-section.astro";
 ---
 
-<ContentSection title="" id="cover" position="right">
+<ContentSection title="" id="cover" height="md:h-5/6 h-screen" bg="square" extra_class="pt-12">
+  <Fragment slot="left">
+    <div class="col-span-2 flex flex-col h-full items-center pt-12">
+      <Icon name="isotype" size="70%" />
+      <Icon name="textlogo" size="80%" />
+    </div>
+  </Fragment>
   
-  <Fragment slot="lead">
+  <Fragment slot="right">
+    <div class="col-span-2 flex h-full md:items-center px-2">
+      <p class="text-center text-default text-4xl">
+        Asegure la legalidad y cumplimiento de su negocio con los servicios de contadores auditores expertos.
+      </p>  
+    </div>
   </Fragment>
 </ContentSection>
+
+
